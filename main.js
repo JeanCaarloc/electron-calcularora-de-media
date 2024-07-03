@@ -1,10 +1,10 @@
-const { app, BrowserWindow, Menu } = require('electron/main')
+const { app, BrowserWindow, Menu, shell } = require('electron/main')
 const path = require('node:path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 770,
+    height: 680,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -48,7 +48,7 @@ const template = [
   },
   {label: 'Ajuda', 
       submenu: [
-          {label: 'Documentação', click: ()=> shell.openExternal('https://www.electronjs.org/docs/latest/api/shell')}, //chama um evento para abrir um link externo
+          {label: 'Documentação', click: ()=> shell.openExternal('https://drive.google.com/file/d/1WhR0LBiJzDRBqt-PkYvId4ZL4yoZRLQL/view')}, //chama um evento para abrir um link externo
           {type: 'separator'},
           {label: 'Sobre', click: ()=> janelasobre()}
       ]      
