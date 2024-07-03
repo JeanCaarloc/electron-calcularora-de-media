@@ -1,0 +1,111 @@
+html, body {
+    height: 100%; /* Garante que body ocupe 100% da altura da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+body{
+    background-image: url('images/fundo-body.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nome-completo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#calculadora-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border: 1px solid green;
+    border-radius: 25px;
+    background-color: azure;
+    width: 450px;
+    height: 450px;
+    justify-content: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+input::placeholder {
+    color: #3f3d3d; /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo do texto do placeholder */
+}
+
+input {
+	position:relative;
+	font-size: 1em;
+	background: linear-gradient(21deg, #cae6f7, #c7f8ed);
+	padding: 1px;
+	display: inline-block;	
+	border-radius: 9999em;
+	*:not(span) {
+		position: relative;
+		display: inherit;
+		border-radius: inherit;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding: 0 .325em;
+		z-index: 1; 
+		
+	&:focus + span {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+	
+span {
+	
+	transform: scale(.993, .94); 
+	transition: transform .5s, opacity .25s;
+	opacity: 0; 		
+	position:absolute;
+	z-index: 0; 
+	margin:4px; 
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	border-radius: inherit;
+	pointer-events: none;
+	box-shadow: inset 0 0 0 3px #fff,
+		0 0 0 4px #fff,
+		3px -3px 30px #1beabd, 
+		-3px 3px 30px #10abff;
+	}
+	
+}

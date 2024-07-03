@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron-Senac</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/comandos.js"></script>
+</head>
+<body>
+    <div id="calculadora-media">
+        <h1>Calculadora de Média de Notas</h1>   
+
+        <form id="formMedia">
+            <label class="nome-completo">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+            
+            <input type="text" id="nota1" name="nota1" placeholder="Digite sua primeira nota" min="0" max="10" step="0.1" required><br><br>
+
+            <input type="text" id="nota2" name="nota2" placeholder="Digite sua segunda nota" min="0" max="10" step="0.1" required><br><br>
+
+            <input type="text" id="nota3" name="nota3" placeholder="Digite sua terceira nota" min="0" max="10" step="0.1" required><br><br>
+
+            <input type="text" id="nota4" name="nota4" placeholder="Digite sua quarta nota" min="0" max="10" step="0.1" required><br><br>
+
+            <button class="button-33" role="button" onclick="calcularMedia()">Calcular</button>
+            <button class="button-33" role="button" onclick="reiniciar()">Reiniciar</button>
+
+
+        </form>
+    </div>
+</body>
+</html>
